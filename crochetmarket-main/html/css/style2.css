@@ -117,7 +117,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 250px;
+    height: 200px;
     color: #f86779;
     
 }
@@ -134,7 +134,7 @@ nav {
     padding-left: 10px;
 }
 
-#productos{
+#products{
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -175,9 +175,9 @@ h2{
     cursor: pointer;
 }
 
-.imagenes{
-    width: 350px;
-    height: 350px;
+.imagen{
+    width: 300px;
+    height: auto;
     border-radius: 30px;
     
 }
@@ -214,8 +214,8 @@ h2{
 }
 
 .producto-individual2{
-    width: 350px;
-    height: 550px;  
+    width: 250px;
+    height: 500px;  
     display: flex;
     flex-direction: column;
     align-items: center;
