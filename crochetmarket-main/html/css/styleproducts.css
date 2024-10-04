@@ -1,0 +1,144 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0; 
+    background-color: #FFE8D0;
+}
+
+nav {
+    height: 6%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #FFE8D0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#nav1 {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+#icon {
+    height: 20px;
+    width: auto;
+    margin: 10px;
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 10%;
+}
+
+p {
+color: rgb(82, 82, 82);
+}
+
+#banner {
+    width: 100vw;
+    height: 30vh;
+    background-image: url(pics/productbanner.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+}
+
+.categorias {
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px; 
+}
+
+.products {
+    width: 80vw; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#productos2 {
+    flex: 1; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: space-around; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+#filtros {
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#buscar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50px;
+    color: #f86779;
+    margin-bottom: 20px; /
+}
+
+.barrabuscar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 500px;
+    height: 50px;
+    border: 3px solid #f86779;
+    padding-left: 10px;
+}
+
+
+.productoindividual {
+    width: 300px;
+    height: 175px;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    box-sizing: border-box;  
+}
+
+.imagenes {
+    width: 175px;
+    height: 175px;
+    border-radius: 20px;
+    overflow: hidden; 
+}
+
+.imagen {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.producto-textos2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    font-size: 12px;
+    padding: 10px; 
+}
+
+#cajamadre {
+    display: flex;
+    width: 100vw;
+    height: 100vh; 
+}
