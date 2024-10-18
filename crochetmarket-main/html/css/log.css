@@ -7,10 +7,13 @@ body {
     background: rgb(255,163,120);
     background: linear-gradient(180deg, rgba(255,163,120,1) 25%, rgba(255,140,125,1) 83%);
     margin: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav {
-    height: 6%;
+    height: 8%;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -49,8 +52,9 @@ nav {
     border-radius: 25px;
     background: rgba(247, 248, 250, 0.85);
     box-shadow: 0px 4px 24px 0px rgba(239, 89, 8, 0.50);
-    height: 64%;
+    height: 100%;
     width: 27%;
+    margin-top: 30px;
 }
 
 .login-info {
@@ -70,6 +74,7 @@ nav {
     border: 1.5px solid coral;
     background: transparent;
     padding: 1%;
+    
 
 }
 

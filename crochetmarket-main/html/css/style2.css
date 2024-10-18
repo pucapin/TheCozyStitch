@@ -14,7 +14,7 @@ body {
 }
 
 nav {
-    height: 6%;
+    height: 8%;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -127,10 +127,10 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 30px;
     width: 500px;
-    height: 60px;
-    border: 3px solid #f86779;
+    height: 40px;
+    border: 2px solid #f86779;
     padding-left: 10px;
 }
 
@@ -140,12 +140,12 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .producto-individual{
     width: 600px;
-    height: 350px;  
+    height: 300px;  
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -177,7 +177,7 @@ h2{
 }
 
 .imagen{
-    width: 300px;
+    width: 250px;
     height: auto;
     border-radius: 30px;
     
@@ -187,7 +187,8 @@ h2{
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 20%;
+    justify-content: flex-start;
+    height: auto;
     color: #f86779;
 
 }
@@ -204,7 +205,8 @@ h2{
     font-size: 20px;
     color: white;
     cursor: pointer;
-    margin-top: 40px;
+    margin-top: none;
+    margin-bottom: 40px;
 }
 
 #productos2 {
