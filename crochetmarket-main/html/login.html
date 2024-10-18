@@ -12,15 +12,14 @@
 <body>
     <nav> 
         <div id="nav1">
-        <a>Home</a>
         <a>Shop</a>
         <a>Create</a>
         <a>About us</a>
         </div>
         <div class="icons">
-        <a href="index.html"><img src="pics/house-solid.svg" id="icon"></a>
-        <a href="cart.html"><img src="pics/cart-shopping-solid.svg" id="icon"></a>
-        <a href="Profilepage.html"><img src="pics/user-solid.svg" id="icon"></a>
+        <a href=""><img src="./pics/house-solid.svg" id="icon"></a>
+        <a href=""><img src="./pics/cart-shopping-solid.svg" id="icon"></a>
+        <a href=""><img src="./pics/user-solid.svg" id="icon"></a>
         </div>
     </nav>
     <div class="space">
@@ -28,15 +27,16 @@
         <div class="login-info">
             <h1>Log in</h1>
             <p id="input-text">Email address</p>
-            <input type="text" id="input-area">
+            <input type="text" class="input-area" id="email">
             <p id="input-text">Password</p>
-            <input type="text" id="input-area">
+            <input type="text" class="input-area" id="password">
             <p id="pass-f">Forgot your password?</p>
             <div class="id-bot">
-            <button id="btn-login">LOGIN</button>
+            <button id="btn-login" onclick="login()">LOGIN</button>
             <p id="dont-h">Dont have an account yet?</p><a id="dont-h" href="register.html">Register now!</a>
             </div>
         </div>
     </div>
     </div>
+    <script src="./js/login.js"> </script>
 </body>

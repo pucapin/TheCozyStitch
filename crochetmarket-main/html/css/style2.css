@@ -48,7 +48,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(pics/crochet\ hero.jpg);
+    background-image: url(https://github.com/pucapin/TheCozyStitch/raw/main/crochetmarket-main/pics/crochethero.jpg);
 }
 
 #caja-texto {
@@ -135,11 +135,12 @@ nav {
 }
 
 #products{
-    height: 100%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .producto-individual{
@@ -203,6 +204,7 @@ h2{
     font-size: 20px;
     color: white;
     cursor: pointer;
+    margin-top: 40px;
 }
 
 #productos2 {

@@ -10,19 +10,19 @@ class Product {
 
     }
     
-htmlCard() {
+htmlCard(pos) {
     return `
     <div class="producto-individual">
                     <div class="imagenes">
-                     <img class="imagen" src="${this.image}" alt="patofrog" width="360px" height="320px">
+                     <img class="imagen" src="${this.image}" alt="${this.name}" width="360px" height="320px">
                     </div>
                     <div class="producto-textos">
-                        <h2>${this.price}</h2>
-                        <p>$ ${this.name}</p>
+                        <h2>${this.name}</h2>
+                        <p>$ ${this.price}</p>
                         <p>Size: ${this.size}</p>
                         <p>Created by: ${this.creator}</p>
                         <br>
-                        <button class="producto-boton">More info</button>
+                        <button class="producto-boton" onclick="openProduct(${pos})">More info</button>
                     </div>
                 </div> 
     `

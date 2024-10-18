@@ -63,7 +63,7 @@ nav {
     font-size: 13px;
 }
 
-#input-area {
+.input-area {
     width: 90%;
     height: 25px;
     border-radius: 10px;

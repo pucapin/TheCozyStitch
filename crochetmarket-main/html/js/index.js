@@ -9,7 +9,7 @@ function parseDataToProducts() {
 //Lleva todos los datos del mapa (los productos)
 function renderAllProducts() {
     let container = document.getElementById("products")
-    for(let i = 0; i < 6; i++) {
+    for(let i = 0; i < 9; i++) {
         let product = products[i]
         container.innerHTML += product.htmlCard(i)
     }
@@ -20,10 +20,6 @@ function openProduct(pos) {
     window.location = "./product.html?name=" + openProduct.name
     
 } //Coloca el nombre del producto en el link 
-
-
-parseDataToProducts()
-renderAllProducts()
 
 
 parseDataToProducts()

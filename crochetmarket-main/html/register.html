@@ -12,15 +12,14 @@
 <body>
     <nav> 
         <div id="nav1">
-        <a>Home</a>
         <a>Shop</a>
         <a>Create</a>
         <a>About us</a>
         </div>
         <div class="icons">
-        <a href="./html/index2.html"><img src="pics/house-solid.svg" id="icon"></a>
-        <a href="./html/cart.html"><img src="pics/cart-shopping-solid.svg" id="icon"></a>
-        <a href="./html/Profilepage.html"><img src="pics/user-solid.svg" id="icon"></a>
+            <a href=""><img src="./pics/house-solid.svg" id="icon"></a>
+            <a href=""><img src="./pics/cart-shopping-solid.svg" id="icon"></a>
+            <a href=""><img src="./pics/user-solid.svg" id="icon"></a>
         </div>
     </nav>
     <div class="space">
@@ -29,17 +28,18 @@
             <h1>Register</h1>
             <p id="input-text">Please enter details to register</p>
             <p id="input-text">Username</p>
-            <input type="text" id="input-area1"> <p id="must">Must be more than 5 characters</p>
+            <input type="text" class="input-area1" id="user"> <p id="must">Must be more than 5 characters</p>
             <p id="input-text">Email address</p>
-            <input type="text" id="input-area">
+            <input type="text" class="input-area" id="email">
             <p id="input-text">Password</p>
-            <input type="text" id="input-area1">
+            <input type="password" class="input-area1" id="pass">
             <p id="input-text">Confirm password</p>
-            <input type="text" id="input-area1">
+            <input type="password" class="input-area1" id="pass2">
             <div class="id-bot">
-            <a href="./index2.html"><button id="btn-login">REGISTER</button></a>
+            <button id="btn-login" onclick="signUp()">REGISTER</button></a>
             </div>
         </div>
     </div>
     </div>
+    <script src="./js/register.js"></script>
 </body>

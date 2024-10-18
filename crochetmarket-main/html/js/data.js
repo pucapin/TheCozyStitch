@@ -7,6 +7,7 @@ let p1 = {
     creator: "@mariecreations",
     image: "https://github.com/pucapin/TheCozyStitch/raw/main/crochetmarket-main/products/Ping%C3%BCino.jpg",
     category: "Plushies",
+    pattern: false,
 }
 
 let p2 = {
@@ -18,6 +19,7 @@ let p2 = {
     creator: "@urbinacreations",
     image: "https://github.com/pucapin/TheCozyStitch/raw/main/crochetmarket-main/products/angry.jpg",
     category: "Plushies",
+    pattern: false,
 }
 
 let p3 = {
@@ -29,6 +31,7 @@ let p3 = {
     creator: "@ghiblicrochet",
     image: "https://github.com/pucapin/TheCozyStitch/raw/main/crochetmarket-main/products/totoro.jpg",
     category: "Plushies",
+    pattern: false,
 }
 
 let p4 = {
@@ -40,6 +43,7 @@ let p4 = {
     creator: "@cuteblobcreate",
     image: "https://github.com/pucapin/TheCozyStitch/raw/main/crochetmarket-main/products/tulipanes.jpg",
     category: "Plushies",
+    pattern: false,
 }
 
 let p5 = {
@@ -51,6 +55,7 @@ let p5 = {
     creator: "@freecrochetpatterns",
     image: "https://github.com/pucapin/TheCozyStitch/raw/main/crochetmarket-main/products/pompom.jpg",
     category: "Plushies",
+    pattern: true,
 }
 
 let p6 = {
@@ -62,6 +67,7 @@ let p6 = {
     creator: "@sanriocrochethehe",
     image: "https://github.com/pucapin/TheCozyStitch/raw/main/crochetmarket-main/products/mymelody.jpg",
     category: "Plushies",
+    pattern: false,
 }
 
 let p7 = {
@@ -73,6 +79,7 @@ let p7 = {
     creator: "@doggythecreator",
     image: "https://github.com/pucapin/TheCozyStitch/raw/main/crochetmarket-main/products/Pink%20pug%20bee.jpg",
     category: "Plushies",
+    pattern: false,
 }
 
 let p8 = {
@@ -84,6 +91,7 @@ let p8 = {
     creator: "@sanriocrochet",
     image: "https://github.com/pucapin/TheCozyStitch/raw/main/crochetmarket-main/products/Strawberry%20Pompompurin.jpg",
     category: "Plushies",
+    pattern: false,
 }
 
 let p9 = {
@@ -93,8 +101,9 @@ let p9 = {
     size: "4cm",
     onstock: true,
     creator: "@xuxucrochet",
-    image: "https://github.com/pucapin/TheCozyStitch/raw/main/crochetmarket-main/products/Moon%20and%20Star%20by%20Xuxu%20Crochet.jpg",
+    image: "https://github.com/pucapin/TheCozyStitch/raw/main/crochetmarket-main/products/Moon.jpg",
     category: "Plushies",
+    pattern: false,
 }
 
 let p10 = {
@@ -106,6 +115,7 @@ let p10 = {
     creator: "@foodieknits",
     image: "https://github.com/pucapin/TheCozyStitch/raw/main/crochetmarket-main/products/Croissant%20Plushie%20-%20Handmade%20Crochet.jpg",
     category: "Plushies",
+    pattern: false,
 }
 
 let p11 = {
@@ -115,8 +125,9 @@ let p11 = {
     size: "30cm",
     onstock: true,
     creator: "@ternurines",
-    image: "https://github.com/pucapin/TheCozyStitch/blob/raw/crochetmarket-main/products/Ternurin%20a%20crochet.jpg",
+    image: "https://github.com/pucapin/TheCozyStitch/raw/main/crochetmarket-main/products/Ternurinacrochet.jpg",
     category: "Plushies",
+    pattern: false,
 }
 
 let p12 = {
@@ -128,6 +139,7 @@ let p12 = {
     creator: "@giannasommese",
     image: "https://github.com/pucapin/TheCozyStitch/raw/main/crochetmarket-main/products/crochet%20pink%20heart%20bag%20!%20%40giannasommese.jpg",
     category: "Accesories",
+    pattern: false,
 }
 
 let p13 = {

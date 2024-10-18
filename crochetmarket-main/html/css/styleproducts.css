@@ -42,7 +42,7 @@ color: rgb(82, 82, 82);
 #banner {
     width: 100vw;
     height: 30vh;
-    background-image: url(pics/productbanner.png);
+    background-image: url(https://github.com/pucapin/TheCozyStitch/raw/main/crochetmarket-main/pics/productbanner.png);
     background-size: cover;
     background-position: center;
     margin-bottom: 50px;
@@ -114,11 +114,27 @@ color: rgb(82, 82, 82);
     box-sizing: border-box;  
 }
 
+.prod-card {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    border-radius: 20px;
+    background-color:  #faefe3;
+    width: 400px;
+    
+}
+.prod-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
 .imagenes {
-    width: 175px;
-    height: 175px;
+    width: auto;
+    height: 160px;
     border-radius: 20px;
     overflow: hidden; 
+    margin: 20px;
 }
 
 .imagen {

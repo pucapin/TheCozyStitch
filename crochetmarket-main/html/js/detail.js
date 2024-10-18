@@ -30,8 +30,10 @@ function renderProduct() {
     let description = document.getElementById("description")
     description.innerHTML = product.description
     
-    let image = document.getElementById("prod-image")
+    let image = document.getElementById("prod-img")
     image.src = product.image
+
+    
 
 } //modificación del UI. Volver a modificar todo el html con los ${nombre}
 

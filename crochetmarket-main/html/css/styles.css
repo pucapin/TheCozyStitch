@@ -39,7 +39,7 @@ nav {
 .hero {
     width: 100%;
     height: 80%;
-    background-image: url(pics/crochet\ hero.jpg);
+    background-image: url(https://github.com/pucapin/TheCozyStitch/raw/main/crochetmarket-main/pics/crochethero.jpg);
     background-size: cover ;
     background-position: 45%;
     display: flex;
@@ -104,10 +104,20 @@ nav {
     justify-content: flex-start;
     flex-direction: row;
 }
+
+#image-landing {
+    height: 340px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 30px;
+}
 .sec2 {
     margin-top: 5%;
     width: 100%;
-    height: 60%;
+    height: 50%;
     display: flex;
     justify-content: center;
 }
@@ -140,7 +150,7 @@ nav {
 
 .crip {
     width: 40%;
-    height: 86%;
+    height: 60%;
     background-color: #FFBB9D;
     border-radius: 100px;
     display: flex;
@@ -151,11 +161,11 @@ nav {
 }
 
 #tit {
-    margin-top: 10%;
+    margin-top: 1%;
     background-color: #f76b7d;
     color: white;
     border-radius: 30px;
-    padding: 18px;
+    padding: 10px;
 }
 
 #desk {

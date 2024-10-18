@@ -43,6 +43,7 @@ nav {
 #bannerperfil {
     width: 100%;
     height: 30%;
+    object-fit: cover;
     }
 
 #cajagrande {
@@ -55,6 +56,7 @@ display: flex;
 width:30vw ;
 height: 100vh;
 justify-content: center;
+margin-top: 60px;
 }
 
 #derecha {
@@ -63,16 +65,23 @@ height: 100vh;
 }
 
 #barraperfil {
-height: 15vh;
+height: 10vh;
 width: 70vw;
 font-size: 19px;
 display: flex;
 flex-direction: column;
 justify-content: center;
+align-items: center;
+flex-wrap: nowrap;
+text-wrap: nowrap;
+
+}
+
+#perfil-item {
+    margin: 45px;
 }
 
 #favoritos {
-height: 85vh;
 width: 70vw;
 flex-direction: column;
 display: flex;
@@ -189,6 +198,7 @@ justify-content: space-around;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 30px;
 }
 
 #buttons {
