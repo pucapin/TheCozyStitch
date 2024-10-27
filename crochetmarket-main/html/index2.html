@@ -40,9 +40,10 @@
     </div>
 
         <div id="buscar">
-            <form method="get">
-                <input class="barrabuscar" type="text" name="search" id="search" placeholder="What are you looking for today?">
+            <form id="searchForm" action="results.html" method="GET" type="submit">
+                <input class="barrabuscar" type="text" name="query" id="search" placeholder="What are you looking for today?">
             </form>
+            <div id="suggestions"></div>
             <h1>Popular products</h1>
         </div>
 
