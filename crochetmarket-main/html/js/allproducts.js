@@ -4,7 +4,7 @@
 
 
 class Product {
-    constructor(name, price, description, size, onstock, creator, image) {
+    constructor(name, price, description, size, onstock, creator, image, category) {
         this.name = name
         this.price = price
         this.description = description
@@ -12,6 +12,7 @@ class Product {
         this.onstock = onstock
         this.creator = creator
         this.image = image
+        this.category = category
 
     }
     

@@ -2,7 +2,7 @@ let products = []
 function parseDataToProducts() {
     for(let i = 0; i < data.length; i++) {
         let map = data[i]
-        let product = new Product(map["name"], map["price"], map["description"], map["size"], map["onstock"], map["creator"], map["image"])
+        let product = new Product(map["name"], map["price"], map["description"], map["size"], map["onstock"], map["creator"], map["image"], map["category"])
         products.push(product)
     }
 }
