@@ -176,6 +176,7 @@ nav {
 }
 
 .get {
+    margin-top: 60px;
     height: 10%;
     width: 100%;
     display: flex;
