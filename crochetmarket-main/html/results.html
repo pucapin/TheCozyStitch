@@ -42,9 +42,10 @@
         </div>
         <div class="products">
             <div id="buscar">
-                <form method="get">
-                    <input class="barrabuscar" type="text" name="search" id="search" placeholder="Search here...">
+                <form id="searchForm" action="results.html" method="GET" type="submit">
+                    <input class="barrabuscar" type="text" name="query" id="search" placeholder="What are you looking for today?">
                 </form>
+                <button id="viewall" onclick="viewAll()">View all</button>
             </div>
          
             <div id="resultados">
