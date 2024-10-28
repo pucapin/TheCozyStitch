@@ -31,19 +31,20 @@ const searchInput = document.getElementById('search');
 function getQueryParam(param) {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(param);
-  }
-  
-  // Get the search query
-  const query = getQueryParam('query').toLowerCase(); // Extract 'query' parameter
-  
- 
-  const searchResults = document.getElementById('resultados');
+}
 
-  if (query) {
-    searchProducts(query.toLowerCase()); // Only call if query is not null
+// Get the search query
+const query = getQueryParam('query'); // Extract 'query' parameter
+
+const searchResults = document.getElementById('resultados');
+
+if (query) {
+    const lowerCaseQuery = query.toLowerCase(); // Only call toLowerCase if query is not null
+    searchProducts(lowerCaseQuery); // Pass the lowercase query to your search function
 } else {
     searchResults.innerHTML = '<p>Please enter a search term.</p>';
 }
+
 
 function searchProducts(query) {
     const results = products.filter(product => 
@@ -52,6 +53,7 @@ function searchProducts(query) {
         product.category.toLowerCase().includes(query) ||
         product.creator.toLowerCase().includes(query) // Include category in the search
     );
+    console.log('Filtered Results:', results); // Log filtered results
     displayResults(results);
 }
 
@@ -81,3 +83,7 @@ function searchProducts(query) {
         searchResults.innerHTML += productCard; // Use += to append
     });
 }
+
+    function viewAll() {
+        displayResults(products);
+    }
