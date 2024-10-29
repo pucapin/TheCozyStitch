@@ -17,11 +17,14 @@ class Product {
     }
     
 prodCard(pos) {
-    return `<div class="prod-card" onclick="openProduct(${pos})">
-                    <img src="${this.image}" class="imagenes"> 
+    return `<div class="prod-card">
+                    <img src="${this.image}" class="imagenes" onclick="openProduct(${pos})"> 
                     <div class="prod-info">
-                        <h2>${this.name}</h2>
-                        <p>$ ${this.price}</p>
+                        <h2 onclick="openProduct(${pos})">${this.name}</h2>
+                        <div id="row-info">
+                            <p>$ ${this.price}</p>
+                            <img src="./pics/heart-regular.svg" class="heart" data-pos="${pos}">
+                        </div>
                     </div>
                 </div> `
 }

@@ -1,40 +1,47 @@
-const params = new URLSearchParams(window.location.search)
-const nameFromUrl = params.get("name")
-
-//Una vez tenemos un objeto params del tipo URLSearchParams ya podremos utilizar los diferentes métodos que nos proporciona para poder recuperar la información que nos interesa.
-//
+const params = new URLSearchParams(window.location.search);
+const nameFromUrl = decodeURIComponent(params.get("name"));
 
 function getProduct() {
     for (let i = 0; i < data.length; i++) {
-        let map = data[i]
-        let title = map["name"]
-        if(title === nameFromUrl) {
-            let product = new Product(map["name"], map["price"], map["description"], map["size"], map["onstock"], map["creator"], map["image"])
-            return product
+        let map = data[i];
+        let title = map["name"].trim();
+        if (title === nameFromUrl) {
+            return new Product(
+                map["name"],
+                map["price"],
+                map["description"],
+                map["size"],
+                map["onstock"],
+                map["creator"],
+                map["image"],
+                map["category"]
+            );
         }
-        
     }
-} //se deben dirigir los datos de los mapas de nuevo a este archivo. se buscan TODOS los productos y lo que hace la función es encontrar el que coincide con el URL (El url se coloca con el event listener)
+    return null; // Return null if no product is found
+}
 
 function renderProduct() {
-    let product = getProduct()
-    let titleH1 = document.getElementById("name")
-    titleH1.innerHTML = product.name
+    let product = getProduct();
     
-    let creator = document.getElementById("creator")
-    creator.innerHTML = "Created by: " + product.creator
+    if (product) { // Check if a product was found
+        let titleH1 = document.getElementById("name");
+        titleH1.innerHTML = product.name;
 
-    let price = document.getElementById("price")
-    price.innerHTML = "$ " + product.price
+        let creator = document.getElementById("creator");
+        creator.innerHTML = "Created by: " + product.creator;
 
-    let description = document.getElementById("description")
-    description.innerHTML = product.description
-    
-    let image = document.getElementById("prod-img")
-    image.src = product.image
+        let price = document.getElementById("price");
+        price.innerHTML = "$ " + product.price;
 
-    
+        let description = document.getElementById("description");
+        description.innerHTML = product.description;
 
-} //modificación del UI. Volver a modificar todo el html con los ${nombre}
+        let image = document.getElementById("prod-img");
+        image.src = product.image;
+    } else {
+       console.log("product not found")
+    }
+}
 
-renderProduct()
+renderProduct();

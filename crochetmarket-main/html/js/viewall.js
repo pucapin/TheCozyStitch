@@ -12,12 +12,14 @@ function renderAllProducts() {
     for(let i = 0; i < products.length; i++) {
         let product = products[i]
         contain.innerHTML += product.prodCard(i)
+        
     }
 } //Renderiza los productos y los coloca en el div con id products.
 
 function openProduct(pos) {
     let openProduct = products[pos]
-    window.location = "./product.html?name=" + openProduct.name
+    window.location = "./product.html?name=" + encodeURIComponent(openProduct.name);
+
     
 } //Coloca el nombre del producto en el link 
 

@@ -1,4 +1,5 @@
 
+const localStorage = window.localStorage
 
 function signUp() {
     let user = document.getElementById("user").value
@@ -10,7 +11,18 @@ function signUp() {
     if (email !== "" && pass !== "" && user !== "" && pass2 !== "") {
         if (user.length >= 5) {
             if (pass === pass2) {
-                window.location = "./index2.html"; // Redirige si todo está correcto
+                if (!localStorage.getItem(user)) {
+                    const userData = {
+                        email: email,
+                        password: pass,
+                        user: user,
+                    };
+                    localStorage.setItem(user, JSON.stringify(userData));
+                    alert("Usuario registrado con éxito!");
+                    window.location = "./index2.html"
+                } else {
+                    alert("El usuario ya existe, elige otro nombre.");
+                }
             } else {
                 alert("Las contraseñas no coinciden");
             }

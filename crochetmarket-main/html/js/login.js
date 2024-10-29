@@ -1,15 +1,24 @@
 function login() {
-    let email = document.getElementById("email").value
-    let pass = document.getElementById("password").value
+    let user = document.getElementById("user").value; // Keep the same variable name
+    let pass = document.getElementById("password").value;
 
-    //Validar que no estén vacíos.
-    if(email !== "" && pass !== "") {
-        if(email === "email@gmail.com" && pass === "1234") {
-            window.location = "./index2.html"
+    // Validate that fields are not empty
+    if (user !== "" && pass !== "") {
+        const storedUser = localStorage.getItem(user); 
+        
+        if (storedUser) {
+            const userData = JSON.parse(storedUser);
+            if (userData.password === pass) {
+                alert("Inicio de sesión exitoso!");
+                window.location = "./index2.html"; // Redirect after successful login
+            } else {
+                alert("Contraseña incorrecta");
+            }
         } else {
-            alert("email@gmail.com / 1234")
+            alert("El usuario no existe");
         }
     } else {
-        alert("Por favor complete los campos para continuar")
+        alert("Por favor complete los campos para continuar");
     }
 }
+
