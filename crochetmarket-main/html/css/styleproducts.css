@@ -197,3 +197,16 @@ color: rgb(82, 82, 82);
     border: none;
     height: 20px;
 }
+
+#row-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.heart {
+    cursor: pointer;
+    height: 24px;
+    width: auto;
+    margin-left: 14px;
+}

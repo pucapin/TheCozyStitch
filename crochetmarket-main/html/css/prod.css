@@ -130,3 +130,10 @@ nav {
     display: inline;
     margin: 0;
 }
+
+.heart {
+    cursor: pointer;
+    height: 24px;
+    width: auto;
+    margin-left: 14px;
+}
