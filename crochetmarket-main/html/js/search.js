@@ -11,6 +11,20 @@ class Product {
         this.category = category
 
     }
+resultCard(pos) {
+    return `
+            <div class="prod-card2">
+                <img src="${this.image}" class="imagenes" onclick="openProduct(${pos})"> 
+                <div class="prod-info">
+                    <h2>${this.name}</h2>
+                    <div id="row-info">
+                    <p>$ ${this.price}</p>
+                    <img src="./pics/heart-regular.svg" class="heart" data-pos="${pos}">
+                </div>
+                </div>
+            </div>
+        `
+    }
 }
 
 const products = []
@@ -57,6 +71,12 @@ function searchProducts(query) {
     displayResults(results);
 }
 
+function openProduct(pos) {
+    let openProduct = products[pos]
+    window.location = "./product.html?name=" + encodeURIComponent(openProduct.name);
+
+    
+}
 
   function displayResults(results) {
     searchResults.innerHTML = ''; // Clear previous results
@@ -64,26 +84,21 @@ function searchProducts(query) {
     if (results.length === 0) {
         searchResults.innerHTML = '<p id="noproducts">No products found :(</p>';
         return;
+    } else {
+        for(let i = 0; i < results.length; i++) {
+            let result = results[i]
+            searchResults.innerHTML += result.resultCard(i)
+            
+        }
+        updateHeartIcon()
     }
-
+    
     // Loop through each product in results
-    results.forEach(product => {
-        // Create a product card for each product
-        const productCard = `
-            <div class="prod-card2">
-                <img src="${product.image}" class="imagenes"> 
-                <div class="prod-info">
-                    <h2>${product.name}</h2>
-                    <p>$${product.price}</p>
-                </div>
-            </div>
-        `;
-
-        // Append the product card to the search results
-        searchResults.innerHTML += productCard; // Use += to append
-    });
+   
 }
+
 
     function viewAll() {
         displayResults(products);
     }
+

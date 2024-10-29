@@ -32,16 +32,17 @@
         </div>
         <form>
             <div class="input-group">
-                <label for="nickname" class="input-text">Nickname</label>
-                <input type="text" class="inputs">
+                <p class="input-text">Nickname</p>
+                <input type="text" class="inputs" id="new-name">
             </div>
             <div class="input-group">
                 <label for="password" class="input-text">Contraseña</label>
-                <input type="password" class="inputs">
+                <input type="password" class="inputs" id="new-pass">
             </div>
-            <button type="submit" id="save-changes">Guardar cambios</button>
+            <button type="submit" id="save-changes" onclick="changeName()">Guardar cambios</button>
         </form>
         </div>
     </div>
+<script src="./js/edit.js"></script>
 </body>
 </html>

@@ -1,13 +1,4 @@
 
-document.addEventListener('DOMContentLoaded', () => {
-    const nameInput = document.getElementById('new-name');
-    const passInput = document.getElementById('new-pass');
-    const saveButton = document.getElementById('save-changes');
-    const displayNick = document.getElementById('userNick');
-    const displayName = document.getElementById('userName');
-    const editButton = document.getElementById('editButton');
-})
-    // Load profile from localStorage
 
 
 let products = []
@@ -48,4 +39,11 @@ function updateHeartIcon(pos) {
         const heartPos = heartImage.getAttribute('data-pos');
         heartImage.src = favorites.includes(parseInt(heartPos)) ? './pics/heart-solid.svg' : './pics/heart-regular.svg';
     });
+}
+
+function openProduct(pos) {
+    let openProduct = products[pos]
+    window.location = "./product.html?name=" + encodeURIComponent(openProduct.name);
+
+    
 }
