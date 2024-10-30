@@ -47,3 +47,9 @@ function openProduct(pos) {
 
     
 }
+
+document.getElementById('down').addEventListener('click', logoutUser);
+function logoutUser() {
+
+    window.location.href = './login.html';
+}
